@@ -1,4 +1,4 @@
 ;;;; package.lisp
 
 (defpackage #:stumpwm-supplement
-  (:use #:cl))
+  (:use #:cl #:stumpwm))

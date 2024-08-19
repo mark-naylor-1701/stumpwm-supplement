@@ -1,8 +1,27 @@
 * stumpwm-supplement
-*** _Your Name <your.name@example.com>_
+Companion code to Stump WM.
 
-This is a project to do ... something.
+** Author
+Mark W. Naylor <mark.naylor.1701@gmail.com>
+
+** Description
+While building some simple extensions to Stump WM, I started looking around in
+the base code to see how similar things were being done. I found that there were
+types and functions that would have been useful had they been exported.
+
+I wanted to be able to use that code without reinventing the wheel. I already
+had some idea as to how I wanted to act upon the data structures, but found that
+there were more supporting functions than I expected. Any of my attempts to
+rewrite would possibly miss housekeeping needed to keep Stump WM running
+smoothly.
+
+I decided to risk using the undocumented, non-exported, features in the stumpwm
+core. But, I did not want to have a lot of <system>::<symbol> references
+scattered around my projects.
+
+That is the reason for this system. All direct references to stumpwm
+private/internal code will be made from here. Should the internals of stumpwm
+change and cause code to break, it should happen here.
 
 ** License
-
-Specify license here
+BSD 3-Clause License
